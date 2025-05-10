@@ -1,0 +1,16 @@
+{% extends "index2.html" %}
+{% block title %}Actualités{% endblock %}
+{% block content %}
+
+<!-- Dynamic Page Description -->
+{% if page_description %}
+<section class="container my-4">
+    <div class="text-center">
+        <p class="lead">{{ page_description }}</p>
+    </div>
+</section>
+{% endif %}
+
+
+
+{% endblock %}

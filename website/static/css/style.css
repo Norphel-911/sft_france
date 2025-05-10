@@ -1,0 +1,110 @@
+/* Underline the title with style */
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+/* Image styling */
+.cover-img {
+    width: 100%;              /* Make it span the full width of its container */
+    height: 700px;            /* Increase the height */
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+/* Section for the bubble */
+.text-bubble-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Bubble style */
+.text-bubble {
+    background-color: #f8f9fa;
+    padding: 20px 30px;
+    border-radius: 25px;
+    position: relative;
+    max-width: 600px;
+    font-size: 1.2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Little "tail" like a speech bubble */
+.text-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 20px 15px 0 15px;
+    border-style: solid;
+    border-color: #f8f9fa transparent transparent transparent;
+}
+/* Bigger image without changing navbar height */
+.donate-button-img {
+    height: 90px;
+    object-fit: contain;
+    transform: translateY(40%); /* push it down a bit more out of navbar */
+}
+
+/* Optional: keep navbar slim */
+.navbar {
+    min-height: 60px;
+}
+
+
+/* Make the navbar links interactive */
+.nav-hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px; /* smooth rounded corners on hover */
+    padding: 8px 12px; /* bigger clickable area */
+}
+
+.nav-hover:hover {
+    background-color: #e0e0e0; /* Light gray color on hover */
+    color: black !important; /* Keep text dark */
+}
+
+/* Bigger donate image without making navbar taller */
+.donate-button-img {
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Optional: Force navbar to stay slim */
+.navbar {
+    min-height: 60px;
+}
+/* Handprint image styling */
+.handprint {
+    width: 120px;
+    opacity: 0.5;
+    z-index: 1;
+    pointer-events: none;
+    filter: brightness(1.7) saturate(0.6) hue-rotate(-10deg);
+}
+
+
+.paint-navbar {
+    background-color: #fdf3e7;
+    background-image: url('https://www.transparenttextures.com/patterns/cream-dust.png');
+    background-repeat: repeat;
+}
+
+/* Header image of POTALA styling */
+.header-custom {
+    background-image: url("{{ url_for('static', filename='images/potala.jpg') }}");
+    background-size: cover;         /* Cover the entire header area */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Don't repeat the image */
+}
+
+
+
+
+
+
