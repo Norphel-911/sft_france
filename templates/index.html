@@ -1,0 +1,155 @@
+{% extends "index2.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<style>
+    .bg-header-image {
+        background-image: url('{{ url_for('static', filename='images/tibetain-mountain.jpg') }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+<header class="header-custom position-relative overflow-hidden bg-header-image text-center p-5">
+    <div class="container position-relative z-2 py-5">
+        <h1 class="display-2 fw-bold lh-sm fst-italic underline text-dark"
+            style="font-family: 'Caveat', cursive; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);">
+            Tant que le Tibet n'est pas libre, notre lutte continue.
+        </h1>
+
+    </div>
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-white opacity-25 z-1"></div>
+</header>
+
+<!-- Warm Section with Title and Description -->
+<section class="py-3" style="background-color: #FFE5B4;"> <!-- Reduced vertical padding -->
+    <div class="container text-center text-dark">
+        <!-- Top horizontal line -->
+        <hr class="my-3" style="border-top: 3px solid #FF8C00; width: 120px; margin: 0 auto;"> <!-- Line 2x longer -->
+
+        <!-- Title -->
+        <h2 class="fw-bold my-2">FAIRE RESONNER LA VOIX DES TIBETAINS AU TIBET</h2> <!-- Reduced vertical margin -->
+
+        <!-- Bottom horizontal line -->
+        <hr class="my-3" style="border-top: 3px solid #FF8C00; width: 120px; margin: 0 auto;"> <!-- Line 2x longer -->
+
+        <!-- Description text -->
+        <p class="mt-3 mx-auto" style="max-width: 800px; font-size: 1.1rem;">
+            Nous œuvrons en solidarité avec le peuple tibétain dans sa lutte pour la liberté et l’indépendance.
+            Nous sommes un réseau mondial de jeunes et d’activistes organisé en sections locales.
+            Par l’éducation, la mobilisation citoyenne et l’action directe non violente, nous menons campagne pour le droit fondamental du peuple tibétain à la liberté politique.
+        </p>
+    </div>
+</section>
+
+<!-- Three Titles in Row Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- First Block -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fas fa-bullhorn text-danger fs-5"></i>
+                    <a href="#qui-sommes-nous" class="text-decoration-none">
+                        <div class="title-box text-white text-center">
+                            <h4 class="fw-bold m-0">Qui somme nous!</h4>
+                        </div>
+                    </a>
+                </div>
+                <p class="text-center text-muted mt-2">
+                    Texte descriptif pour le premier titre. Vous pouvez y mettre une phrase inspirante ou informative.
+                </p>
+            </div>
+
+            <!-- Second Block -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fas fa-users text-danger fs-5"></i>
+                    <a href="#rejoignez-nous" class="text-decoration-none">
+                        <div class="title-box text-white text-center">
+                            <h4 class="fw-bold m-0">Rejoignez-nous!</h4>
+                        </div>
+                    </a>
+                </div>
+                <p class="text-center text-muted mt-2">
+                    Texte descriptif pour le premier titre. Vous pouvez y mettre une phrase inspirante ou informative.
+                </p>
+            </div>
+
+            <!-- Third Block -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="fas fa-hand-holding-heart text-danger fs-5"></i>
+                    <a href="#don" class="text-decoration-none">
+                        <div class="title-box text-white text-center">
+                            <h4 class="fw-bold m-0">Don!</h4>
+                        </div>
+                    </a>
+                </div>
+                <p class="text-center text-muted mt-2">
+                    Texte descriptif pour le premier titre. Vous pouvez y mettre une phrase inspirante ou informative.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Les Dernières Actualités Section -->
+<section class="container my-5">
+    <div class="d-flex align-items-center mb-4">
+        <hr class="flex-grow-1 me-3">
+        <h2 class="fw-bold">LES DERNIERES ACTUALITES</h2>
+        <hr class="flex-grow-1 ms-3">
+    </div>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 overflow-hidden">
+                <img src="{{ url_for('static', filename='images/tibetan.jpg') }}" class="card-img-top" alt="Card 1">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-primary fw-bold">News</h5>
+                    <p class="card-text">Latest updates and news from our organization.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-muted"><i class="fas fa-map-marker-alt me-1"></i> Paris</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 overflow-hidden">
+                <img src="{{ url_for('static', filename='images/tibetan.jpg') }}" class="card-img-top" alt="Card 2">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-primary fw-bold">Event 2</h5>
+                    <p class="card-text">Upcoming events and special gatherings information.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-muted"><i class="fas fa-map-marker-alt me-1"></i> Paris</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 overflow-hidden">
+                <img src="{{ url_for('static', filename='images/tibetan.jpg') }}" class="card-img-top" alt="Card 3">
+                <div class="card-body bg-light">
+                    <h5 class="card-title text-primary fw-bold">Event 3</h5>
+                    <p class="card-text">Learn more about our recent projects and initiatives.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-muted"><i class="fas fa-map-marker-alt me-1"></i> Paris</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
+
+{% endblock %}

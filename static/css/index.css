@@ -1,0 +1,19 @@
+
+
+/* Title Box with Red Rectangle - Fit to Text */
+.title-box {
+    background-color: #FF4C4C;
+    color: white;
+    display: inline-block;
+    padding: 0.2rem 0.6rem; /* smaller padding */
+    border-radius: 4px;
+    line-height: 1.2;
+    font-size: 1rem;
+    margin: 0 auto; /* center the box */
+}
+
+.title-box h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}

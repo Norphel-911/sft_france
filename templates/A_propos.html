@@ -1,0 +1,51 @@
+{% extends "index2.html" %}
+{% block title %}Actualités{% endblock %}
+{% block content %}
+
+<!-- Dynamic Page Description -->
+{% if page_description %}
+<section class="container my-4">
+    <div class="text-center">
+        <p class="lead">{{ page_description }}</p>
+    </div>
+</section>
+{% endif %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/a_propos.css') }}">
+
+<div class="staff-buttons">
+  <button>Notre Histoire</button>
+  <button>Notre Staff</button>
+  <button>L'histoire du Tibet</button>
+</div>
+
+<section class="staff-title">
+  <h1>STAFF</h1>
+</section>
+
+<!-- Team Section -->
+  <div class="section">
+    <!-- President -->
+    <div class="profile-card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Anonymous profile photo">
+
+      <div class="profile-content">
+        <h2>Tenzin Yangchen</h2>
+        <p><strong>President</strong></p>
+        <p>Welcome to our organization. I'm proud to lead such an amazing team...</p>
+      </div>
+    </div>
+
+    <!-- Other Member -->
+    <div class="profile-card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Anonymous profile photo">
+      <div class="profile-content">
+        <h2>tenzy_chovy</h2>
+        <p><strong>Vice President</strong></p>
+        <p>It's a pleasure to be part of this journey with everyone involved...</p>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

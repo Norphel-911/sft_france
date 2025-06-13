@@ -1,0 +1,116 @@
+.staff-buttons button {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: none;
+}
+
+.staff-buttons button:hover {
+  background: linear-gradient(to right, #d3d3d3, #b0b0b0);
+  color: #333; /* use dark grey text so it’s readable on light background */
+  border-color: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+
+.staff-buttons button:active {
+  background: #222; /* slightly darker on press */
+  color: white;
+  border-color: transparent;
+}
+
+
+
+
+.staff-title {
+  background: linear-gradient(to right, #d3d3d3, #b0b0b0); /* Soft grey gradient */
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.staff-title h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-content {
+  max-width: 700px;
+}
+
+.profile-content h2 {
+  margin: 0 0 10px;
+}
+
+.profile-content p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-card img {
+    margin-bottom: 15px;
+  }
+}
